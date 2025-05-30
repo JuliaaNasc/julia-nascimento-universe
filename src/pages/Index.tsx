@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -130,7 +129,7 @@ const Index = () => {
                   Criadora de Conteúdo
                 </Badge>
               </div>
-              <div className="flex gap-4 justify-center lg:justify-start">
+              <div className="flex gap-4 justify-center lg:justify-start mb-8">
                 <Button 
                   onClick={() => scrollToSection("about")}
                   className="bg-blue-600 hover:bg-blue-700"
@@ -150,7 +149,7 @@ const Index = () => {
               <div className="relative">
                 <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-blue-500 shadow-2xl shadow-blue-500/20">
                   <img 
-                    src="/lovable-uploads/e5223ee7-72cc-45df-9c38-64c4142b5a4e.png" 
+                    src="/lovable-uploads/7cee99a2-cd8f-4abb-a30a-65a15fa39a76.png" 
                     alt="Julia Nascimento"
                     className="w-full h-full object-cover"
                   />
@@ -178,7 +177,7 @@ const Index = () => {
                 <CardContent className="p-8">
                   <div className="flex items-center gap-4 mb-6">
                     <MapPin className="w-6 h-6 text-blue-400" />
-                    <span className="text-gray-300">Maracanaú, Ceará</span>
+                    <span className="text-gray-300">Fortaleza, Ceará</span>
                     <Calendar className="w-6 h-6 text-blue-400 ml-4" />
                     <span className="text-gray-300">11 de dezembro, 2005</span>
                   </div>
@@ -370,6 +369,7 @@ const Index = () => {
               variant="outline" 
               size="lg"
               className="border-blue-500 text-blue-400 hover:bg-blue-500/10"
+              onClick={() => window.open('https://www.linkedin.com/in/juliacostadonascimento/', '_blank')}
             >
               <Linkedin className="w-5 h-5 mr-2" />
               LinkedIn
