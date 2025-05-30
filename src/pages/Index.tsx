@@ -239,9 +239,15 @@ const Index = () => {
                 <h4 className="text-xl font-bold text-blue-400 mb-4">Experiência Profissional</h4>
                 <div className="flex items-center gap-3 mb-2">
                   <Briefcase className="w-5 h-5 text-blue-400" />
-                  <span className="text-gray-300">Estagiária em CRM e Omnichannel</span>
+                  <span className="text-gray-300">Desenvolvedora Mobile e Web</span>
                 </div>
+                <p className="text-gray-300 mb-2">Empresa de CRM e Omnichannel Nativo</p>
                 <p className="text-gray-400 text-sm">Agosto 2023 - Presente</p>
+                <ul className="text-gray-300 space-y-1 mt-3 text-sm">
+                  <li>• Desenvolvimento de aplicações mobile nativas</li>
+                  <li>• Desenvolvimento de soluções web para CRM</li>
+                  <li>• Integração de sistemas omnichannel</li>
+                </ul>
               </CardContent>
             </Card>
             
