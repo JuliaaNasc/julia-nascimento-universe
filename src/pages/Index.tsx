@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -149,9 +150,9 @@ const Index = () => {
               <div className="relative">
                 <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-blue-500 shadow-2xl shadow-blue-500/20">
                   <img 
-                    src="/lovable-uploads/7cee99a2-cd8f-4abb-a30a-65a15fa39a76.png" 
+                    src="/lovable-uploads/e4f03843-1c51-4a1d-9fb6-70947456afc4.png" 
                     alt="Julia Nascimento"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
                 <div className="absolute -top-4 -right-4 w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center animate-pulse">
@@ -378,6 +379,7 @@ const Index = () => {
               variant="outline" 
               size="lg"
               className="border-blue-500 text-blue-400 hover:bg-blue-500/10"
+              onClick={() => window.open('https://www.instagram.com/julia_nassc/', '_blank')}
             >
               <Instagram className="w-5 h-5 mr-2" />
               Instagram
@@ -386,6 +388,7 @@ const Index = () => {
               variant="outline" 
               size="lg"
               className="border-blue-500 text-blue-400 hover:bg-blue-500/10"
+              onClick={() => window.open('https://github.com/JuliaaNasc', '_blank')}
             >
               <Github className="w-5 h-5 mr-2" />
               GitHub
