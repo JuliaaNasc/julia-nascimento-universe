@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Github, Linkedin, Instagram, Mail, MapPin, Calendar, Heart, Code, Camera, Globe, Briefcase } from "lucide-react";
+import { Github, Linkedin, Instagram, Mail, MapPin, Calendar, Heart, Code, Camera, Globe, Briefcase, Phone } from "lucide-react";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -37,6 +37,11 @@ const Index = () => {
       year: "2024",
       title: "Modelo de Cabelo",
       description: "Salão renomado em Fortaleza"
+    },
+    {
+      year: "2025",
+      title: "Modelo de Cabelo",
+      description: "Continuidade na carreira de modelo"
     }
   ];
 
@@ -334,15 +339,33 @@ const Index = () => {
             Estou sempre aberta a novas oportunidades e conexões
           </p>
           
-          <div className="flex justify-center gap-6">
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-blue-500 text-blue-400 hover:bg-blue-500/10"
-            >
-              <Mail className="w-5 h-5 mr-2" />
-              Email
-            </Button>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            <Card className="bg-white/5 border-blue-500/20 backdrop-blur-sm">
+              <CardContent className="p-6 text-center">
+                <Mail className="w-8 h-8 text-blue-400 mx-auto mb-4" />
+                <h3 className="text-lg font-semibold text-white mb-2">Desenvolvedora</h3>
+                <p className="text-gray-300">julia.nascimento.dev@gmail.com</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white/5 border-blue-500/20 backdrop-blur-sm">
+              <CardContent className="p-6 text-center">
+                <Camera className="w-8 h-8 text-purple-400 mx-auto mb-4" />
+                <h3 className="text-lg font-semibold text-white mb-2">Modelo</h3>
+                <p className="text-gray-300">julia.nasmodel@gmail.com</p>
+              </CardContent>
+            </Card>
+            
+            <Card className="bg-white/5 border-blue-500/20 backdrop-blur-sm">
+              <CardContent className="p-6 text-center">
+                <Phone className="w-8 h-8 text-green-400 mx-auto mb-4" />
+                <h3 className="text-lg font-semibold text-white mb-2">Telefone</h3>
+                <p className="text-gray-300">(85) 9 88186503</p>
+              </CardContent>
+            </Card>
+          </div>
+          
+          <div className="flex gap-4 justify-center">
             <Button 
               variant="outline" 
               size="lg"
